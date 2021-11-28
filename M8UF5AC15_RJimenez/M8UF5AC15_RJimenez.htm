@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UFT-8">
+        <html lang="cat">
+        <link rel=icon href="">
+        <title>Formulari d'enviament</title>
+        <link rel=icon href="">
+        <script type="text/javascript">
+            function validar(){
+                var passwd=document.getElementById("psswd").value;
+                var confpsswd=document.getElementById("confpsswd").value;
+                if(psswd==confpsswd) {
+                    return true;
+                }
+                else{
+                    alert("No coincideix");
+                    return false;
+                }
+            }
+
+        </script> 
+        
+    </head>
+    <body style="font-family:Verdana, Geneva, Tahoma, sans-serif">
+        <table cellspacing="0" align="center">
+            <form onsubmit="return validar();" method="get">
+            <tr>
+                <td bgcolor="306090"width="350"><h3 style="color:ghostwhite">&nbsp;Enviar missatge</h3></td>
+                <td bgcolor="306090"width="60"><img src="img/gb_reload_s.png"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2">&nbsp;</td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="fname">&nbsp;Nom:</label>
+                <input type="text" id="fname" name="fname" maxlength="50" size="35"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="E-Mail">&nbsp;E-Mail:</label>
+                <input type="email" id="E-Mail" size="35"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for=Arxiu>&nbsp;Arxiu:</label>
+                <input type="text" id="Arxiu" size="35"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="file" size="4000" id="Arxiu"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="Imatge:">&nbsp;Imatge:</label>
+                <input type="text" id="Imatge" size="24"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="file" size="4000"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF" align="center">
+                <td colspan="2" style=font-size:80%;>El tamany de l'arxiu i la imatge no pot exedir els 4 KBytes</td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="Resposta">&nbsp;Requereixo resposta:</label>
+                <input type="radio" name="resposta" id="si">
+                <label for="si">Sí</label><input type="radio" name="resposta" id="No"><label for="No">No</label></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td align="center" colspan="2"><p>Missatge</p></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td align="center" colspan="2"><textarea rows="5" cols="45"></textarea></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td align="center" colspan="2"><input type="submit" value="Enviar">&nbsp;<input type="reset" value="Borrar"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="Usuari">&nbsp;Usuari:</label>
+                <input type="text" id="Usuari"maxlength="8" required size="25"></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="psswd">&nbsp;Contrasenya:</label><input type="password" id="psswd" size="20"></td>
+
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><label for="confpsswd">&nbsp;Confirmar contrasenya:</label><input type="password" id="confpsswd" size="20"></td></td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><h4>Jocs a escollir</h4></td>
+
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="checkbox" id="cbox1" value="cbox1">Fornite</td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="checkbox" id="cbox2" value="cbox2">Call of duty</td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="checkbox" id="cbox3" value="cbox3">Minecraf</td>
+            </tr>
+            <tr style="background-color:#EFEFEF">
+                <td colspan="2"><input type="checkbox" id="cbox4" value="cbox4">God of war</td>  
+            </tr>
+            </form>
+        </table>
+    </body>
+</html>
