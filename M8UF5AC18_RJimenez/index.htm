@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calcutredora</title>
+        <link rel=icon href="img/signos-matematicos.jpg">
+    </head>
+    <body>
+        <form name="calculadora">
+            <center><h1>CALCUTREDORA</h1></center>
+            <table align="center">
+                <tr align="center">
+                    <th colspan="4"><input type="textfield" name="ans" value=""></th>
+                </tr>
+                <tr align="center">
+                    <td><div onClick="document.calculadora.ans.value+='1'"><img src="img/1.png" width="20"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='2'"><img src="img/2.png" width="15"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='3'"><img src="img/3.png" width="20"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='+'"><img src="img/mas.png" alt="+" width="25"></td>
+                </tr>
+                <tr align="center">
+                    <td><div onClick="document.calculadora.ans.value+='4'"><img src="img/4.png" width="25"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='5'"><img src="img/5.png" width="28"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='6'"><img src="img/6.png" width="11"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='-'"><img src="img/menos.png" width="20"></div></td> 
+                </tr>
+                <tr align="center">
+                    <td><div onClick="document.calculadora.ans.value+='7'"><img src="img/7.png" width="20"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='8'"><img src="img/8.png" width="14"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='9'"><img src="img/9.png" width="33"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='*'"><img src="img/aste.png" width="20"></div></td>
+                </tr>
+                <tr align="center">
+                    <td><div onClick="document.calculadora.ans.value+='0'"><img src="img/zero.png" width="20"></div></td>
+                    <td><div onClick="document.calculadora.ans.value='&nbsp;'"><img src="img/c.png" width="15"></div></td>
+                    <td><div onClick="document.calculadora.ans.value+='/'"><img src="img/divi.png" width="20"></div></td>
+                    <td><div onClick="document.calculadora.ans.value=eval(document.calculadora.ans.value)"><img src="img/igual.png" width="20"></div></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
